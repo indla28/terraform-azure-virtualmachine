@@ -1,11 +1,11 @@
 variable "rg-name"{
     type = string
-    default = "VM-rg"
+    default = "CICD_rg"
     description = "this is rg for the virtual machine"
 }
 variable "rg-location"{
     type = string
-    default = "East US"
+    default = "East US 2"
     description = "this is location for the virtual machine"
 }
 variable "vnet-name"{
@@ -15,22 +15,22 @@ variable "vnet-name"{
 }
 variable "subnet-name"{
     type = string
-    default = "sub-network"
+    default = "sub-network1"
     description = "this is the sub network for the vnet in the virtual machine"
 }
 variable "address_space"{
     type = list(string)
-    default = ["10.0.0.0/16"]
+    default = ["12.0.0.0/16"]
     description = "address space for virtual network"
 }
 variable "address_prefixes"{
     type = list(string)
-    default = ["10.0.1.0/24"]
+    default = ["12.0.1.0/24"]
     description = "address space for sub-network"
 }
 variable "public_ip"{
     type = string
-    default="public-ip"
+    default="public-ipCICD"
     description = "public ip address"
 }
 variable "allocation_method"{
@@ -40,7 +40,7 @@ variable "allocation_method"{
 }
 variable "nic" {
     type = string
-    default = "NIC-VM"
+    default = "NIC-CICD"
     description = "Network interface card for the virtual network"
 }
 variable "nic_configuration"{
@@ -60,7 +60,7 @@ variable "nsg_name"{
 }
 variable "storage"{
     type=string
-    default = "storageacc05204"
+    default = "storageacc0105CICD"
     description = "storage account for data durability"
 }
 variable "account_tier"{

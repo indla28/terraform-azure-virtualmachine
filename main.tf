@@ -1,9 +1,4 @@
-provider "azurerm"{
-features{}
-}
-terraform {
-backend "azurerm"{}
-}
+
 #Resource group creation
 resource "azurerm_resource_group" "rg"{
     name=var.rg-name

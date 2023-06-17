@@ -60,7 +60,7 @@ variable "nsg_name"{
 }
 variable "storage"{
     type=string
-    default = "storageacc0105CICD"
+    default = "storageacc0105cicd"
     description = "storage account for data durability"
 }
 variable "account_tier"{
